@@ -1,0 +1,45 @@
+.cardHeader {
+  display: flex;
+  margin: 15px 0;
+}
+
+.cardImage {
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  background-color: black;
+  border-radius: 50%;
+  margin-right: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+}
+
+.cardName p {
+  font-size: var(--normal-font);
+}
+
+.cardName p + p {
+  font-size: var(--label-font);
+  color: rgb(99, 97, 97);
+  font-weight: 400;
+}
+
+.cardValues {
+  background-color: rgb(235, 235, 235);
+  border-radius: 15px;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+}
+
+.cardInfoTitle {
+  font-size: var(--label-font);
+  font-weight: 600;
+}
+
+.cardInfoValue {
+  font-size: var(--normal-font);
+}

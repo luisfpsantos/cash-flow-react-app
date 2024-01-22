@@ -1,0 +1,18 @@
+:root {
+  --title-font: 25px;
+  --subTitle-font: 19px;
+  --normal-font: 17px;
+  --label-font: 14px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: rgb(240, 240, 240);
+  line-height: 26px;
+}
+
+p {
+  margin: 0;
+}

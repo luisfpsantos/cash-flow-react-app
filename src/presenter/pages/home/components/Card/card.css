@@ -1,0 +1,11 @@
+.card {
+  margin: 0 20px;
+  background-color: #fcfef9;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.first {
+  margin-top: -60px;
+}

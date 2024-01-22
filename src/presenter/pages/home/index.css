@@ -1,0 +1,17 @@
+.lightTitle {
+  color: rgb(99, 97, 97);
+  font-weight: 400;
+  font-size: var(--normal-font);
+}
+
+.boldTitle {
+  color: black;
+  font-weight: bold;
+  font-size: var(--title-font);
+}
+
+.lightBoldTitle {
+  color: black;
+  font-weight: bold;
+  font-size: var(--subtTitle-font);
+}

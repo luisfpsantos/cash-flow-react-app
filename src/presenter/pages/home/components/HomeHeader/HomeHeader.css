@@ -1,0 +1,33 @@
+.homeHeader {
+  background-color: #159b3f;
+  padding: 20px;
+  height: 150px;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+}
+
+.imagePerson {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  border: 2px solid rgba(7, 7, 7, 0.308);
+}
+
+.personName p {
+  margin: 0 0 5px;
+  font-size: var(--subTitle-font);
+  color: white;
+}
+
+.personName p + p {
+  font-size: var(--title-font);
+  font-weight: bold;
+}

@@ -1,0 +1,16 @@
+.manageButton {
+  border: 2px solid #5aaf71;
+  padding: 10px;
+  font-size: var(--subtTitle-font);
+  background-color: transparent;
+  border-radius: 10px;
+  color: #39794a;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 300ms ease-in-out;
+  &:hover {
+    background-color: #e0ffe8;
+  }
+}
