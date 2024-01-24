@@ -39,6 +39,52 @@ export default function Home() {
     onInit();
   }, []);
 
+  const buildAccounts = (acc: AccountEntity[]) =>
+    acc.map((account, index) => {
+      const el = (
+        <Account
+          balance={account.balance}
+          image={account.image}
+          name={account.name}
+        />
+      );
+
+      if (index < acc.length - 1) {
+        return (
+          <>
+            {el}
+            <Divider />
+          </>
+        );
+      }
+
+      return el;
+    });
+
+  const buildCreditCards = (cc: CreditCardEntity[]) =>
+    cc.map((creditCard, index) => {
+      const el = (
+        <CreditCard
+          brand={creditCard.brand}
+          image={creditCard.image}
+          name={creditCard.name}
+          valueAvaiable={creditCard.valueAvailable}
+          valueStatement={creditCard.valueStatement}
+        />
+      );
+
+      if (index < cc.length - 1) {
+        return (
+          <>
+            {el}
+            <Divider />
+          </>
+        );
+      }
+
+      return el;
+    });
+
   return (
     <>
       <Header />
@@ -52,14 +98,7 @@ export default function Home() {
             <Divider />
             <p className="lightBoldTitle">My accounts</p>
 
-            {accounts.map((account) => (
-              <Account
-                key={account.name}
-                balance={account.balance}
-                image={account.image}
-                name={account.name}
-              />
-            ))}
+            {...buildAccounts(accounts)}
 
             <ManageButton
               name="Manage accounts"
@@ -79,16 +118,7 @@ export default function Home() {
             <Divider />
             <p className="lightBoldTitle">My cards</p>
 
-            {creditCards.map((creditCard) => (
-              <CreditCard
-                key={creditCard.name}
-                brand={creditCard.brand}
-                image={creditCard.image}
-                name={creditCard.name}
-                valueAvaiable={creditCard.valueAvailable}
-                valueStatement={creditCard.valueStatement}
-              />
-            ))}
+            {...buildCreditCards(creditCards)}
 
             <ManageButton
               name="Manage Cards"
