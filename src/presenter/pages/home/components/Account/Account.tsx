@@ -1,8 +1,9 @@
+import toCurrency from '../../../../../shared/utils/toCurrency';
 import './Account.css';
 
 interface Props {
   name: string;
-  image: JSX.Element;
+  image: string;
   balance: number;
 }
 
@@ -11,9 +12,11 @@ export default function Account(props: Props) {
 
   return (
     <div className="account">
-      <div className="accountImage">{image}</div>
+      <div className="accountImage">
+        <img alt="" src={image} />
+      </div>
       <div className="accountName">{name}</div>
-      <div className="accountValue">{balance}</div>
+      <div className="accountValue">{toCurrency(balance)}</div>
     </div>
   );
 }
