@@ -83,8 +83,8 @@ export default class HomeRepositoryImpl implements HomeRepository {
           {
             name: 'Cartão casa',
             brand: 'Nubank',
-            valueAvailable: 1000,
-            valueStatement: 3453,
+            valueAvailable: 2334,
+            valueStatement: 1244,
             image: 'https://nubank.com.br/images/nu-icon.png?v=2'
           },
           {

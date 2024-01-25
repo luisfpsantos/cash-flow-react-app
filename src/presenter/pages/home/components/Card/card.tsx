@@ -1,14 +1,14 @@
 import './card.css';
 
 interface Props {
-  content: JSX.Element;
+  children: JSX.Element[];
   isFirst?: boolean;
 }
 
 export default function Card(props: Props) {
-  const { content, isFirst } = props;
+  const { children, isFirst } = props;
 
-  return <div className={`card ${isFirst && 'first'}`}>{content}</div>;
+  return <div className={`card ${isFirst && 'first'}`}>{children}</div>;
 }
 
 Card.defaultProps = {

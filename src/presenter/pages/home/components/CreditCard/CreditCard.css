@@ -35,6 +35,10 @@
   text-align: start;
 }
 
+.cardValues div {
+  overflow: hidden;
+}
+
 .cardInfoTitle {
   font-size: var(--label-font);
   font-weight: 600;
@@ -42,4 +46,8 @@
 
 .cardInfoValue {
   font-size: var(--normal-font);
+}
+
+.cardValues div:last-of-type p:nth-child(2) {
+  color: red;
 }
